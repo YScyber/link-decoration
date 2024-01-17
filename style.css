@@ -1,5 +1,7 @@
 @charset "UTF-8";
 body {
+    margin: 20px auto;
+    width: 700px;
     font: 1.2rem/1.4 sans-serif;
 }
 
@@ -7,9 +9,8 @@ div {
     display: flex;
 }
 
-p {
-    margin: 20px auto;
-    width: 300px;
+div > p {
+    flex: 1;
 }
 
 a {
