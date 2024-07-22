@@ -13,27 +13,27 @@ div > p {
     flex: 1;
 }
 
-a {
+p a {
     padding: 2px 1px 0;
 }
 
-a:link {
+p a:link {
     color: #080153;
 }
 
-a:visited {
+p a:visited {
     color: #161d7a;
 }
 
-a:focus {
+p a:focus {
     background-color: #9c98e4;
 }
 
-a:hover {
+p a:hover {
     background-color: #b1aafe;
 }
 
-a:active {
+p a:active {
     background-color: #080153;
     color: #b1aafe;
 }
