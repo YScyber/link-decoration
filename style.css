@@ -38,7 +38,7 @@ p a:active {
     color: #b1aafe;
 }
 
-.borderBottom a {
+p.borderBottom a {
     outline: none;
     text-decoration: none;
     border-bottom: 1px solid;
