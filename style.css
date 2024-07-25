@@ -1,8 +1,11 @@
 @charset "UTF-8";
+html {
+    font: 1.2rem/1.4 sans-serif;
+}
+
 body {
     margin: 20px auto;
     width: 700px;
-    font: 1.2rem/1.4 sans-serif;
 }
 
 div {
