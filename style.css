@@ -4,13 +4,14 @@ html {
 }
 
 body {
-    margin: 20px auto;
-    width: 90%;
-    max-width: 700px;
+    
 }
 
 div {
     display: flex;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
 }
 
 div > p {
