@@ -8,7 +8,7 @@ body {
     padding: 0;
 }
 
-div {
+div.wrapper {
     display: flex;
     margin: 20px auto;
     width: 90%;
