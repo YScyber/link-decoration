@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>リンクアイコン</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <style class="editable"></style>
+</head>
+<body>
+    <section class="positioning preview"></section>
+    <textarea class="positioning playable playable-html" style="height: 160px;">
+<h2>リンクアイコン</h2>
+
+<p>私が使っているサイトには<a href="#">Home</a>の他に<a href="../navigation/link/graphic.html">Graphic</a>、<a href="../navigation/link/music.html">Music</a>、<a href="../navigation/link/blog.html">Blog</a>、<a href="../navigation/link/contact.html">Contact</a>といったリンクがあります。</p>
+</textarea>
+    <textarea class="positioning playable playable-css" style="height: 160px;">
+p {
+    line-height: 1.8;
+}
+
+p a {
+    padding: 2px;
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+p a[href*="link"] {
+    padding-right: 18px;
+    background: url(link-icon.svg) no-repeat 100% 50%;
+    background-size: 16px 16px;
+}
+</textarea>
+    <div class="positioning playable-buttons">
+        <input type="button" id="reset" value="リセット" />
+    </div>
+</body>
+</html>

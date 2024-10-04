@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-bottom一括指定プロパティ</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <style class="editable"></style>
+</head>
+<body>
+    <section class="positioning preview"></section>
+    <textarea class="positioning playable playable-html" style="height: 160px;">
+<h2>border-bottom一括指定プロパティ</h2>
+
+<p>私が使っているサイトには<a href="#">Home</a>の他に<a href="#">Graphic</a>、<a href="#">Music</a>、<a href="#">Blog</a>、<a href="#">Contact</a>といったリンクがあります。</p>
+</textarea>
+    <textarea class="positioning playable playable-css" style="height: 160px;">
+p {
+    line-height: 1.8;
+}
+
+p a {
+    padding: 2px;
+    outline: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+</textarea>
+    <div class="positioning playable-buttons">
+        <input type="button" id="reset" value="リセット" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ナビゲーションメニュー</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
+    <style class="editable"></style>
+</head>
+<body>
+    <section class="positioning preview"></section>
+    <textarea class="positioning playable playable-html" style="height: 160px;">
+<h2>ナビゲーションメニュー</h2>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="link/graphic.html">Graphic</a>
+    <a href="link/music.html">Music</a>
+    <a href="link/blog.html">Blog</a>
+    <a href="link/contact.html">Contact</a>
+</nav>
+</textarea>
+    <textarea class="positioning playable playable-css" style="height: 160px;">
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.625%
+}
+
+nav a {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 3;
+}
+</textarea>
+    <div class="positioning playable-buttons">
+        <input type="button" id="reset" value="リセット" />
+    </div>
+</body>
+</html>
