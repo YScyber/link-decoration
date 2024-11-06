@@ -16,21 +16,19 @@
 <p>私が使っているサイトには<a href="#">Home</a>の他に<a href="../navigation/link/graphic.html">Graphic</a>、<a href="../navigation/link/music.html">Music</a>、<a href="../navigation/link/blog.html">Blog</a>、<a href="../navigation/link/contact.html">Contact</a>といったリンクがあります。</p>
 </textarea>
     <textarea class="positioning playable playable-css" style="height: 160px;">
-p {
+section.preview p {
     line-height: 1.8;
 }
 
-p a {
-    padding: 2px;
+section.preview p a {
     outline: none;
     text-decoration: none;
     border-bottom: 1px solid;
 }
 
-p a[href*="link"] {
+section.preview p a[href*="link"] {
     padding-right: 18px;
-    background: url(link-icon.svg) no-repeat 100% 50%;
-    background-size: 16px 16px;
+    background: url(link-icon.svg) no-repeat 100% 50% / 16px 16px;
 }
 </textarea>
     <div class="positioning playable-buttons">
