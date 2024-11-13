@@ -19,7 +19,6 @@ body {
 }
 
 section.preview {
-    display: block;
     padding: 10px;
     border: 1px solid #333;
 }
