@@ -75,19 +75,19 @@ section.preview p a {
 #### HTML
 
 ```html
-<h2>border-bottom一括指定プロパティ</h2>
+<h2>リンクアイコン</h2>
 
 <p>私が使っているサイトには<a href="#">Home</a>の他に<a href="#">Graphic</a>、<a href="#">Music</a>、<a href="#">Blog</a>、<a href="#">Contact</a>といったリンクがあります。</p>
 ```
 
 #### CSS
 
-リンク先のアドレスに`link`が含まれているものすべてに、右端に`18px`の余白を空けた空間に[SVGで作成したアイコン](link-icon/link-icon.svg "link-icon/link-icon.svg")を繰り返さずにX軸を`100%`、Y軸を`50%`の位置に幅と高さともに`16px`の大きさで配置します。
+リンク先のアドレスに`link`が含まれているものすべてに、右端に`18px`の余白を空けた空間に[SVGで作成したアイコン](link-icon/icons/link-icon.svg "link-icon/icons/link-icon.svg")を繰り返さずにX軸を`100%`、Y軸を`50%`の位置に幅と高さともに`16px`の大きさで配置します。
 
 ```css
 section.preview p a[href*="link"] {
     padding-right: 18px;
-    background-image: url(link-icon.svg);
+    background-image: url(icons/link-icon.svg);
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: 16px 16px;
@@ -98,7 +98,7 @@ section.preview p a[href*="link"] {
 
 ```css
 section.preview p a {
-    background: url(link-icon.svg) no-repeat 100% 50% / 16px 16px;
+    background: url(icons/link-icon.svg) no-repeat 100% 50% / 16px 16px;
 }
 ```
 <br>
