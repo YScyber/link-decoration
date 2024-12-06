@@ -24,12 +24,24 @@ p要素内にa要素を入れ子させた文章となります。**デフォル�
 a要素内に他のテキストとの間隔を空けるために`padding: 0.1em;`を指定しています。
 
 ```css
-section.preview p a {
+p a {
     padding: 0.1em;
 }
 ```
 
 このCSSの設定は**border-bottom一括指定プロパティ**、**リンクアイコン**に限り、各ディレクトリ内にある`style.css`ファイルに記述しています。
+
+アットルールを使用して画面の幅が`699px`以下の場合、textarea要素内に記述されているコードのフォントサイズを`120%`から`100%`へと変更しています。 
+
+```css
+@media screen and (max-width: 699px) {
+    textarea {
+        font-size: 100%;
+    }
+}
+```
+
+このCSSの共通設定は、各ディレクトリ内にある`style.css`ファイルに記述しています。
 <br>
 
 ### border-bottom一括指定プロパティ
@@ -47,7 +59,7 @@ section.preview p a {
 border-bottom一括指定プロパティを使用すると、`g`、`j`、`p`などの文字が下線に被らないので読みやすくなりますが、行間が窮屈にならないように`line-height: 1.8;`を指定しています。
 
 ```css
-section.preview p {
+p {
     line-height: 1.8;
 }
 ```
@@ -55,7 +67,7 @@ section.preview p {
 `border-bottom`一括指定プロパティを使用する際は`outline: none;`、`text-decoration: none;`と記述してデフォルトの装飾がされないようにします。
 
 ```css
-section.preview p a {
+p a {
     outline: none;
     text-decoration: none;
 }
@@ -64,7 +76,7 @@ section.preview p a {
 `1px`の太さの下線を装飾していますが、a要素のデフォルト色である`青色`を継承させるために色の指定は省略しています。
 
 ```css
-section.preview p a {
+p a {
     border-bottom: 1px solid;
 }
 ```
@@ -82,12 +94,12 @@ section.preview p a {
 
 #### CSS
 
-リンク先のアドレスに`link`が含まれているものすべてに、右端に`18px`の余白を空けた空間に[SVGで作成したアイコン](link-icon/icons/link-icon.svg "link-icon/icons/link-icon.svg")を繰り返さずにX軸を`100%`、Y軸を`50%`の位置に幅と高さともに`16px`の大きさで配置します。
+リンク先のアドレスに`link`が含まれているものすべてに、右端に`18px`の余白を空けた空間に[SVGで作成したアイコン](link-icon/icons/link-icon.png "link-icon/icons/link-icon.png")を繰り返さずにX軸を`100%`、Y軸を`50%`の位置に幅と高さともに`16px`の大きさで配置します。
 
 ```css
-section.preview p a[href*="link"] {
+p a[href*="link"] {
     padding-right: 18px;
-    background-image: url(icons/link-icon.svg);
+    background-image: url(icons/link-icon.png);
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: 16px 16px;
@@ -97,8 +109,8 @@ section.preview p a[href*="link"] {
 なお、`background-image`プロパティ、`background-repeat`プロパティ、`background-position`プロパティ、`background-size`プロパティは`background`一括指定プロパティを使用して以下のように記述しています。
 
 ```css
-section.preview p a {
-    background: url(icons/link-icon.svg) no-repeat 100% 50% / 16px 16px;
+p a {
+    background: url(icons/link-icon.png) no-repeat 100% 50% / 16px 16px;
 }
 ```
 <br>
@@ -153,7 +165,7 @@ nav a {
 ```
 <br>
 
-※ 日本時間 2024/10/04 にリファクタリングしました。
+※ 日本時間 2024/12/06 に変更しました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/link-decoration/ "https://yscyber.github.io/link-decoration/")
