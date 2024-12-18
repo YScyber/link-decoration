@@ -34,7 +34,7 @@ textarea {
     font-size: 120%;
 }
 
-textarea.playable-html { min-height: 120px; }
+textarea.playable-html { min-height: 130px; }
 textarea.playable-css { min-height: 260px; }
 
 div.playable-buttons {
