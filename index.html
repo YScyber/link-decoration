@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>リンクの装飾</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
         <h1>リンクの装飾</h1>
+        <select>
+            <option value="">選択してください</option>
+            <option value="default/index.html">デフォルト</option>
+            <option value="border-bottom/index.html">border-bottom一括プロパティ</option>
+            <option value="link-icon/index.html">リンクアイコン</option>
+            <option value="navigation/index.html">ナビゲーションメニュー</option>
+        </select>
     </header>
-    <div class="wrapper">
-        <iframe src="default/index.html" title="デフォルトのデモファイル" width="980" height="550" frameborder="0"></iframe>
-        <iframe src="border-bottom/index.html" title="border-bottom一括プロパティのデモファイル" width="980" height="650" frameborder="0"></iframe>
-        <iframe src="link-icon/index.html" title="リンクアイコンのデモファイル" width="980" height="750" frameborder="0"></iframe>
-        <iframe src="navigation/index.html" title="ナビゲーションメニューのデモファイル" width="980" height="800" frameborder="0"></iframe>
-    </div>
+    <iframe width="980" height="500" frameborder="0"></iframe>
 </body>
 </html>
