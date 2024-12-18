@@ -180,7 +180,7 @@ nav a {
 ```
 <br>
 
-※ 日本時間 2024/12/18 に変更しました。
+※ 日本時間 2024/12/18 に変更を加えました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/link-decoration/ "https://yscyber.github.io/link-decoration/")
