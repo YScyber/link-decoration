@@ -14,7 +14,7 @@
     - CSSコードが記述されています。
 - リセットボタン（`input`要素）
     - textarea要素内に記述されているコードの変更を初期値（読み込まれた最初の状態）に戻すためのボタンです。
-<br>
+<br><br>
 
 ## 共通設定
 
@@ -57,7 +57,7 @@ p a {
 ```
 
 このCSSの共通設定は、各ディレクトリ内にある`style.css`ファイルに記述しています。
-<br>
+<br><br>
 
 ## border-bottom一括指定プロパティ
 
@@ -95,9 +95,10 @@ p a {
     border-bottom: 1px solid;
 }
 ```
+<br>
 
 [ソースコードの参照ページへ](border-bottom/index.html "border-bottom/index.html")
-<br>
+<br><br>
 
 ## リンクアイコン
 
@@ -130,15 +131,16 @@ p a {
     background: url(icons/link-icon.png) no-repeat 100% 50% / 16px 16px;
 }
 ```
+<br>
 
 [ソースコードの参照ページへ](link-icon/index.html "link-icon/index.html")
-<br>
+<br><br>
 
 ## ナビゲーションメニュー
 
 ### HTML
 
-nav要素内に５つのa要素があり、それぞれにリンク先が記述されています。
+`nav`要素内に５つの`a`要素があり、それぞれにリンク先が記述されています。
 
 ```html
 <h2>ナビゲーションメニュー</h2>
@@ -182,11 +184,12 @@ nav a {
     line-height: 3;
 }
 ```
-
-[ソースコードの参照ページへ](navigation/index.html "navigation/index.html")
 <br>
 
-※ 日本時間 2024/12/25 に変更を加えました。
+[ソースコードの参照ページへ](navigation/index.html "navigation/index.html")
+<br><br>
+
+※ 日本時間 2024/12/27 に変更を加えました。
 <br><br>
 
 [完成ページへ](https://yscyber.github.io/link-decoration/ "https://yscyber.github.io/link-decoration/")
