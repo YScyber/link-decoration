@@ -54,12 +54,12 @@ p a {
 
 ### CSS
 
-リンク先のアドレスに`link`が含まれているものすべてに、右端に`18px`の余白を空けた空間に[SVGで作成したアイコン](icons/link-icon.png "icons/link-icon.png")を繰り返さずにX軸を`100%`、Y軸を`75%`の位置に幅と高さともに`16px`の大きさで配置します。
+リンク先のアドレスに`link`が含まれているものすべてに、右端に`18px`の余白を空けた空間に[SVGで作成したアイコン](icons/link-icon_w.png "icons/link-icon_w.png")を繰り返さずにX軸を`100%`、Y軸を`75%`の位置に幅と高さともに`16px`の大きさで配置します。
 
 ```css
 p a[href*="link"] {
     padding-right: 18px;
-    background-image: url(icons/link-icon.png);
+    background-image: url(icons/link-icon_w.png);
     background-repeat: no-repeat;
     background-position: 100% 75%;
     background-size: 16px 16px;
@@ -70,7 +70,7 @@ p a[href*="link"] {
 
 ```css
 p a {
-    background: url(icons/link-icon.png) no-repeat 100% 75% / 16px 16px;
+    background: url(icons/link-icon_w.png) no-repeat 100% 75% / 16px 16px;
 }
 ```
 <br>
@@ -120,7 +120,7 @@ nav a {
 
 ```css
 nav a {
-    border: 1px solid #111;
+    border: 1px solid #f8f8f8;
     text-align: center;
     line-height: 3;
 }
