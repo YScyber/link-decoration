@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>リンクの装飾</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <style>
+        /* border-bottom一括プロパティ */
+        div#border-bottom > p {
+            line-height: 1.8;
+        }
+
+        div#border-bottom > p a {
+            outline: none;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+
+        /* リンクアイコン */
+        div#link-icon > p {
+            line-height: 1.8;
+        }
+
+        div#link-icon > p a {
+            outline: none;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+
+        div#link-icon > p a[href*="link"] {
+            padding-right: 18px;
+            background: url(icons/link-icon.png) no-repeat 100% 75% / 16px 16px;
+        }
+
+        /* ナビゲーションメニュー */
+        div#navigation > nav {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.625%
+        }
+
+        div#navigation > nav a {
+            outline: none;
+            text-decoration: none;
+            border: 1px solid #111;
+            text-align: center;
+            line-height: 3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>リンクの装飾</h1>
+    </header>
+    <div id="border-bottom">
+        <h2>border-bottom一括指定プロパティ</h2>
+        <p>私が使っているサイトには<a href="#">Home</a>の他に<a href="#">Graphic</a>、<a href="#">Music</a>、<a href="#">Blog</a>、<a href="#">Contact</a>といったリンクがあります。</p>
+    </div>
+    <div id="link-icon">
+        <h2>リンクアイコン</h2>
+        <p>私が使っているサイトには<a href="#">Home</a>の他に<a href="link/graphic.html">Graphic</a>、<a href="link/music.html">Music</a>、<a href="link/blog.html">Blog</a>、<a href="link/contact.html">Contact</a>といったリンクがあります。</p>
+    </div>
+    <div id="navigation">
+        <h2>ナビゲーションメニュー</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="link/graphic.html">Graphic</a>
+            <a href="link/music.html">Music</a>
+            <a href="link/blog.html">Blog</a>
+            <a href="link/contact.html">Contact</a>
+        </nav>
+    </div>
+</body>
+</html>
