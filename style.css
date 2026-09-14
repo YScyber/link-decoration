@@ -8,12 +8,12 @@ body {
     padding: 0;
     width: 90%;
     max-width: 980px;
-    background-color: #eee;
-    color: #111;
+    background-color: #000;
+    color: #f8f8f8;
 }
 
 header {
-    border-bottom: 10px double #111;
+    border-bottom: 10px double;
 }
 
 h1 {
