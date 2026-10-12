@@ -103,7 +103,7 @@ nav要素にgridプロパティを指定して1行になるように配置しま
 nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0.625%
+    gap: 0.625%;
 }
 ```
 
